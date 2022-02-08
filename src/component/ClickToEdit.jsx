@@ -10,7 +10,7 @@ const ClickToEdit = () => {
 		setIsEditMode(true);
 	};
 	const changeValue = (e) => {
-		if ((e.type === 'keydown' && e.key === 'Enter') || e.type === 'blur') {
+		if ((e.type === 'keypress' && e.key === 'Enter') || e.type === 'blur') {
 			setValue(e.target.value);
 			setIsEditMode(false);
 		}
@@ -29,7 +29,7 @@ const ClickToEdit = () => {
 					ref={inputRef}
 					type='text'
 					className='input-box'
-					onKeyDown={changeValue}
+					onKeyPress={changeValue}
 					onBlur={changeValue}></input>
 			) : (
 				<div className='input-box' onClick={edit}>

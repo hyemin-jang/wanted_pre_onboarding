@@ -26,12 +26,10 @@ const ToggleContainer = styled.div`
 		width: 100px;
 		height: 40px;
 		border-radius: 40px;
-		background-position: right;
 		background: linear-gradient(to left, gray 50%, rgb(85, 0, 182) 50%) right;
 		background-size: 200%;
 		transition: 1s;
 		&.toggle-on {
-			background-position: left;
 			background: linear-gradient(to right, rgb(85, 0, 182) 50%, gray 50%) left;
 			background-size: 200%;
 			transition: 1s;

@@ -23,10 +23,7 @@ function App() {
 					Open Modal!
 				</ModalButton>
 				{isModalOpened && (
-					<Modal
-						isModalOpened={isModalOpened}
-						closeModal={closeModal}
-						maskClosable={true}>
+					<Modal isModalOpened={isModalOpened} closeModal={closeModal}>
 						Hello World :)
 					</Modal>
 				)}

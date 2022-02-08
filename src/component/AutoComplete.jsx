@@ -100,7 +100,6 @@ const AutoComplete = () => {
 		'pail',
 	];
 
-	const searchBox = useRef();
 	const [value, setValue] = useState();
 	const [matchedWords, setMatchedWords] = useState([]);
 	const match = (word, input) => {

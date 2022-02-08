@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Modal = (props) => {
-	const { isModalOpened, closeModal, maskClosable, children } = props;
+	const { isModalOpened, closeModal, children } = props;
 
 	const onMaskClick = (e) => {
 		// e.target(=클릭한 대상)과 e.currentTarget(=ModalWrapper)가 같으면 모달창 닫는다
@@ -13,9 +13,7 @@ const Modal = (props) => {
 
 	return (
 		<>
-			<ModalWrapper
-				onClick={maskClosable ? onMaskClick : null}
-				isModalOpened={isModalOpened}>
+			<ModalWrapper onClick={onMaskClick} isModalOpened={isModalOpened}>
 				<ModalContainer>
 					<ModalButton onClick={() => closeModal()}>X</ModalButton>
 					<ModalInner>{children}</ModalInner>
