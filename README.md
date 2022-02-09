@@ -1,5 +1,20 @@
 # 원티드 프리온보딩 프론트엔드 코스 사전과제
 
+## 🕹 실행방법
+```
+$ git clone https://github.com/hyemin-jang/wanted_pre_onboarding.git
+```
+```
+$ cd wanted_pre_onboarding
+```
+```
+$ yarn install
+```
+```
+$ yarn start
+```
+
+## ❣ 구현 기능
 ### ✅ Modal
 - 모달을 사용하려는 페이지에서 `useState`로 모달창 열렸는지 여부를 나타내는 상태값 isModalOpened 정의 (초기값 false)
 - 모달 여는 버튼 클릭하면 isModalOpened의 상태값을 true로 변경 => `삼항연산자`를 사용한 `조건부 렌더링`으로 true일 때 모달창 나타남
